@@ -9,6 +9,7 @@ public class TestAOP {
 		ApplicationService annoservice =(ApplicationService)beanFactory.getBean(ApplicationService.class);
 		System.out.println(annoservice);
 		annoservice.processApplication();
+		annoservice.processApplicationWithAudit();
 
 	}
 
