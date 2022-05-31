@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="message_one_for"></p>
+    <hr>
+    <p id="message_two_for"></p>
+
+    <p id="message_three_for"></p>
+
+    <p id="message_four_for"></p>
+
+    <script>
+        let text="";
+        for(let i=1;i<=5;i++)
+        {
+            text=text+ "The number is " +i+ "<br>";
+
+        }
+        document.getElementById("message_one_for").innerHTML=text;
+
+        text="";
+        const cars=["Maruthi","Tata","Honda","Hyundai"];
+        let length;
+        length=cars.length;
+        for(let i =0;i<length;i++){
+            text+=cars[i] + "<br>";
+        }
+        
+        document.getElementById("message_two_for").innerHTML=text;
+
+        text="";
+        for(let car in cars){
+            text+= cars[car] + "<br>";
+           
+        }
+        document.getElementById("message_three_for").innerHTML=text;
+
+
+        text="";
+        for(let car of cars){
+            text+=car+ "<br>";
+            
+        }
+        document.getElementById("message_four_for").innerHTML=text;
+    </script>
+</body>
+</html>
